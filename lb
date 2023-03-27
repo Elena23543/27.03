@@ -1,0 +1,29 @@
+import re 
+def substitutor():
+    sentence1 = "Предмет языки программирования"
+    print(re.sub(r"Предмет", "Дисциплина", sentence1))
+substitutor()
+
+import re
+result = re.split(r "П", "МетодыПпрограммирования")
+print(result)
+
+
+p = re.compile(r"(? P<word>\b\w+\b)")
+m = p.seach("((((Lost of punctuation))))")
+m.group("word")
+m.group(1)
+
+
+import re
+result = re.search(r"302", "МП будет в 302 аудитории ")
+print(result.group(0))
+
+import re
+result = re.match(r'AV', 'AV Методы программирования AV')
+print(result)
+
+
+import re 
+result = re.finall(r'\w', "Языки программирования")
+print(result)
